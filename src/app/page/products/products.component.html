@@ -1,0 +1,11 @@
+<div>
+  <input
+    type="text"
+    #searchBox
+    (keydown)="filterProducts($event)"
+    placeholder="Search for a product"
+  />
+
+  <h2>Product list:</h2>
+  <app-card-list [products]="filteredProducts"></app-card-list>
+</div>
